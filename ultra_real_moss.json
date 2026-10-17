@@ -1,0 +1,718 @@
+{
+  "id": "602a9b4a-8b28-4c64-a19e-fb35024af9c8",
+  "revision": 2,
+  "last_node_id": 57,
+  "last_link_id": 166,
+  "nodes": [
+    {
+      "id": 16,
+      "type": "KSampler",
+      "pos": [
+        626.2852254846746,
+        177.83193602353768
+      ],
+      "size": [
+        303.2685701005314,
+        262
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 160
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "link": 69
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "link": 71
+        },
+        {
+          "name": "latent_image",
+          "type": "LATENT",
+          "link": 76
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.40.0",
+        "Node name for S&R": "KSampler",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        1,
+        "fixed",
+        14,
+        1,
+        "euler",
+        "simple",
+        1
+      ],
+      "widgets_values_named": {
+        "seed": 1,
+        "control_after_generate": "fixed",
+        "steps": 14,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    {
+      "id": 17,
+      "type": "VAEDecode",
+      "pos": [
+        795.8900576594032,
+        139.78107727462515
+      ],
+      "size": [
+        140,
+        50
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 22
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 162
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            61
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.40.0",
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      }
+    },
+    {
+      "id": 25,
+      "type": "VAELoader",
+      "pos": [
+        -275.4,
+        468.46666666666647
+      ],
+      "size": [
+        388.6517902655427,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            162
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.40.0",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "flux2-vae.safetensors"
+      ],
+      "widgets_values_named": {
+        "vae_name": "flux2-vae.safetensors"
+      }
+    },
+    {
+      "id": 31,
+      "type": "CLIPLoader",
+      "pos": [
+        -274.66666666666663,
+        310.6666666666665
+      ],
+      "size": [
+        387.5696736420332,
+        106
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "slot_index": 0,
+          "links": [
+            80
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.41.0",
+        "Node name for S&R": "CLIPLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "qwen3.5_9b_w4a8_gptq.safetensors",
+        "moss_image",
+        "default"
+      ],
+      "widgets_values_named": {
+        "clip_name": "qwen3.5_9b_w4a8_gptq.safetensors",
+        "type": "moss_image",
+        "device": "default"
+      }
+    },
+    {
+      "id": 32,
+      "type": "UNETLoader",
+      "pos": [
+        -274.40000000000003,
+        180
+      ],
+      "size": [
+        386.2654543264041,
+        82
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            166
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.41.0",
+        "Node name for S&R": "UNETLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "moss_image_sft_int8_convrot.safetensors",
+        "default"
+      ],
+      "widgets_values_named": {
+        "unet_name": "moss_image_sft_int8_convrot.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    {
+      "id": 38,
+      "type": "PreviewImage",
+      "pos": [
+        942.1530609372318,
+        174.5351585071752
+      ],
+      "size": [
+        422.6721554398862,
+        514.615418486766
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 61
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.41.0",
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 44,
+      "type": "CLIPTextEncode",
+      "pos": [
+        175.39657869365155,
+        176.7197461840158
+      ],
+      "size": [
+        431.03926436781603,
+        479.03202298850533
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 161
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            69,
+            70
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.41.0",
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth."
+      ],
+      "widgets_values_named": {
+        "text": "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth."
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 45,
+      "type": "ConditioningZeroOut",
+      "pos": [
+        179.72020737540444,
+        699.6813553794176
+      ],
+      "size": [
+        204.134765625,
+        26
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "conditioning",
+          "type": "CONDITIONING",
+          "link": 70
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            71
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.41.0",
+        "Node name for S&R": "ConditioningZeroOut",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      }
+    },
+    {
+      "id": 49,
+      "type": "EmptyLatentImage",
+      "pos": [
+        430.3485557051446,
+        702.6108266437855
+      ],
+      "size": [
+        261.33333333333326,
+        106
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            77
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.41.0",
+        "Node name for S&R": "EmptyLatentImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        832,
+        1216,
+        1
+      ],
+      "widgets_values_named": {
+        "width": 832,
+        "height": 1216,
+        "batch_size": 1
+      }
+    },
+    {
+      "id": 51,
+      "type": "LatentUpscaleBy",
+      "pos": [
+        671.1002798430752,
+        702.8099071035552
+      ],
+      "size": [
+        260.66666666666674,
+        82
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 77
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            76
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.41.0",
+        "Node name for S&R": "LatentUpscaleBy",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "bislerp",
+        1.5
+      ],
+      "widgets_values_named": {
+        "upscale_method": "bislerp",
+        "scale_by": 1.5
+      }
+    },
+    {
+      "id": 54,
+      "type": "Power Lora Loader (rgthree)",
+      "pos": [
+        624.8157563321049,
+        492.0121358657857
+      ],
+      "size": [
+        306.3138426425502,
+        166
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "name": "model",
+          "type": "MODEL",
+          "link": 166
+        },
+        {
+          "dir": 3,
+          "name": "clip",
+          "type": "CLIP",
+          "link": 80
+        }
+      ],
+      "outputs": [
+        {
+          "dir": 4,
+          "name": "MODEL",
+          "shape": 3,
+          "type": "MODEL",
+          "links": [
+            160
+          ]
+        },
+        {
+          "dir": 4,
+          "name": "CLIP",
+          "shape": 3,
+          "type": "CLIP",
+          "links": [
+            161
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "rgthree-comfy",
+        "ver": "d7297b42f0fa78bec1c0411478f887423c249502",
+        "Show Strengths": "Single Strength",
+        "Match": "",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        {},
+        {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        {
+          "on": true,
+          "lora": "moss\\moss_turbo_v1.safetensors",
+          "strength": 1,
+          "strengthTwo": null
+        },
+        {
+          "on": true,
+          "lora": "moss\\ultra_real_moss_sft_v1.safetensors",
+          "strength": 0.75,
+          "strengthTwo": null
+        },
+        {},
+        ""
+      ],
+      "widgets_values_named": {
+        "divider": {},
+        "PowerLoraLoaderHeaderWidget": {
+          "type": "PowerLoraLoaderHeaderWidget"
+        },
+        "lora_1": {
+          "on": true,
+          "lora": "moss\\moss_turbo_v1.safetensors",
+          "strength": 1,
+          "strengthTwo": null
+        },
+        "lora_2": {
+          "on": true,
+          "lora": "moss\\ultra_real_moss_sft_v1.safetensors",
+          "strength": 0.75,
+          "strengthTwo": null
+        },
+        "divider#1": {},
+        "➕ Add Lora": ""
+      }
+    }
+  ],
+  "links": [
+    [
+      22,
+      16,
+      0,
+      17,
+      0,
+      "LATENT"
+    ],
+    [
+      61,
+      17,
+      0,
+      38,
+      0,
+      "IMAGE"
+    ],
+    [
+      69,
+      44,
+      0,
+      16,
+      1,
+      "CONDITIONING"
+    ],
+    [
+      70,
+      44,
+      0,
+      45,
+      0,
+      "CONDITIONING"
+    ],
+    [
+      71,
+      45,
+      0,
+      16,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      76,
+      51,
+      0,
+      16,
+      3,
+      "LATENT"
+    ],
+    [
+      77,
+      49,
+      0,
+      51,
+      0,
+      "LATENT"
+    ],
+    [
+      80,
+      31,
+      0,
+      54,
+      1,
+      "CLIP"
+    ],
+    [
+      160,
+      54,
+      0,
+      16,
+      0,
+      "MODEL"
+    ],
+    [
+      161,
+      54,
+      1,
+      44,
+      0,
+      "CLIP"
+    ],
+    [
+      162,
+      25,
+      0,
+      17,
+      1,
+      "VAE"
+    ],
+    [
+      166,
+      32,
+      0,
+      54,
+      0,
+      "MODEL"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.450000000000001,
+      "offset": [
+        -116.99906376442146,
+        -69.15995766116964
+      ]
+    },
+    "frontendVersion": "1.55.17",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "ue_links": [],
+    "links_added_by_ue": []
+  },
+  "extensions": {
+    "seed_widgets": {
+      "16": 0
+    }
+  },
+  "version": 0.4
+}
