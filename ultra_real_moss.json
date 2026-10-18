@@ -1,8 +1,8 @@
 {
   "id": "602a9b4a-8b28-4c64-a19e-fb35024af9c8",
   "revision": 2,
-  "last_node_id": 57,
-  "last_link_id": 166,
+  "last_node_id": 61,
+  "last_link_id": 179,
   "nodes": [
     {
       "id": 16,
@@ -16,13 +16,13 @@
         262
       ],
       "flags": {},
-      "order": 8,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 160
+          "link": 179
         },
         {
           "name": "positive",
@@ -60,8 +60,8 @@
         }
       },
       "widgets_values": [
-        1,
-        "fixed",
+        595301858669448,
+        "randomize",
         14,
         1,
         "euler",
@@ -69,8 +69,8 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 1,
-        "control_after_generate": "fixed",
+        "seed": 595301858669448,
+        "control_after_generate": "randomize",
         "steps": 14,
         "cfg": 1,
         "sampler_name": "euler",
@@ -92,7 +92,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 9,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -235,7 +235,7 @@
           "type": "MODEL",
           "slot_index": 0,
           "links": [
-            166
+            169
           ]
         }
       ],
@@ -270,7 +270,7 @@
         514.615418486766
       ],
       "flags": {},
-      "order": 10,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -311,7 +311,7 @@
         479.03202298850533
       ],
       "flags": {},
-      "order": 6,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -341,10 +341,10 @@
         }
       },
       "widgets_values": [
-        "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth."
+        "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth. "
       ],
       "widgets_values_named": {
-        "text": "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth."
+        "text": "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth. "
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -353,8 +353,8 @@
       "id": 45,
       "type": "ConditioningZeroOut",
       "pos": [
-        179.72020737540444,
-        699.6813553794176
+        421.57537978919714,
+        137.16135537941784
       ],
       "size": [
         204.134765625,
@@ -363,7 +363,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 7,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -396,8 +396,8 @@
       "id": 49,
       "type": "EmptyLatentImage",
       "pos": [
-        430.3485557051446,
-        702.6108266437855
+        172.54165915342054,
+        694.9901369886135
       ],
       "size": [
         261.33333333333326,
@@ -443,8 +443,8 @@
       "id": 51,
       "type": "LatentUpscaleBy",
       "pos": [
-        671.1002798430752,
-        702.8099071035552
+        444.5899350154891,
+        694.6788726207965
       ],
       "size": [
         260.66666666666674,
@@ -494,8 +494,8 @@
       "id": 54,
       "type": "Power Lora Loader (rgthree)",
       "pos": [
-        624.8157563321049,
-        492.0121358657857
+        625.3261011596908,
+        486.5914462106137
       ],
       "size": [
         306.3138426425502,
@@ -504,14 +504,14 @@
       "flags": {
         "collapsed": false
       },
-      "order": 4,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
           "dir": 3,
           "name": "model",
           "type": "MODEL",
-          "link": 166
+          "link": 176
         },
         {
           "dir": 3,
@@ -527,7 +527,7 @@
           "shape": 3,
           "type": "MODEL",
           "links": [
-            160
+            179
           ]
         },
         {
@@ -564,8 +564,8 @@
         },
         {
           "on": true,
-          "lora": "moss\\ultra_real_moss_sft_v1.safetensors",
-          "strength": 0.75,
+          "lora": "moss\\ultra_real_moss_sft_v1_pro.safetensors",
+          "strength": 0.7,
           "strengthTwo": null
         },
         {},
@@ -584,12 +584,125 @@
         },
         "lora_2": {
           "on": true,
-          "lora": "moss\\ultra_real_moss_sft_v1.safetensors",
-          "strength": 0.75,
+          "lora": "moss\\ultra_real_moss_sft_v1_pro.safetensors",
+          "strength": 0.7,
           "strengthTwo": null
         },
         "divider#1": {},
         "➕ Add Lora": ""
+      }
+    },
+    {
+      "id": 58,
+      "type": "ModelSamplingAuraFlow",
+      "pos": [
+        -88.16645347695705,
+        566.7875438680653
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 169
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            175
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.41.0",
+        "Node name for S&R": "ModelSamplingAuraFlow",
+        "ue_properties": {
+          "version": "7.0.1",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        5,
+        "flow"
+      ],
+      "widgets_values_named": {
+        "shift": 5,
+        "sampling": "flow"
+      }
+    },
+    {
+      "id": 60,
+      "type": "SkipLayerGuidanceDiTSimple",
+      "pos": [
+        -114.15266037350928,
+        613.0882335232382
+      ],
+      "size": [
+        398.691015625,
+        130
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 6,
+      "mode": 0,
+      "showAdvanced": true,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 175
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "slot_index": 0,
+          "links": [
+            176
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.41.0",
+        "Node name for S&R": "SkipLayerGuidanceDiTSimple",
+        "ue_properties": {
+          "widget_ue_connectable": {
+            "double_layers": true,
+            "single_layers": true,
+            "start_percent": true,
+            "end_percent": true
+          },
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "",
+        "22",
+        0,
+        0.5
+      ],
+      "widgets_values_named": {
+        "double_layers": "",
+        "single_layers": "22",
+        "start_percent": 0,
+        "end_percent": 0.5
       }
     }
   ],
@@ -659,14 +772,6 @@
       "CLIP"
     ],
     [
-      160,
-      54,
-      0,
-      16,
-      0,
-      "MODEL"
-    ],
-    [
       161,
       54,
       1,
@@ -683,10 +788,34 @@
       "VAE"
     ],
     [
-      166,
+      169,
       32,
       0,
+      58,
+      0,
+      "MODEL"
+    ],
+    [
+      175,
+      58,
+      0,
+      60,
+      0,
+      "MODEL"
+    ],
+    [
+      176,
+      60,
+      0,
       54,
+      0,
+      "MODEL"
+    ],
+    [
+      179,
+      54,
+      0,
+      16,
       0,
       "MODEL"
     ]
@@ -697,8 +826,8 @@
     "ds": {
       "scale": 1.450000000000001,
       "offset": [
-        -116.99906376442146,
-        -69.15995766116964
+        -116.88182238511119,
+        -60.53650938530737
       ]
     },
     "frontendVersion": "1.55.17",
