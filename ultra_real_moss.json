@@ -60,18 +60,18 @@
         }
       },
       "widgets_values": [
-        595301858669448,
-        "randomize",
-        14,
+        111,
+        "fixed",
+        10,
         1,
         "euler",
         "simple",
         1
       ],
       "widgets_values_named": {
-        "seed": 595301858669448,
-        "control_after_generate": "randomize",
-        "steps": 14,
+        "seed": 111,
+        "control_after_generate": "fixed",
+        "steps": 10,
         "cfg": 1,
         "sampler_name": "euler",
         "scheduler": "simple",
@@ -295,9 +295,7 @@
           "input_ue_unconnectable": {},
           "version": "7.8"
         }
-      },
-      "widgets_values": [],
-      "widgets_values_named": {}
+      }
     },
     {
       "id": 44,
@@ -341,10 +339,10 @@
         }
       },
       "widgets_values": [
-        "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth. "
+        "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth."
       ],
       "widgets_values_named": {
-        "text": "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth. "
+        "text": "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth."
       },
       "color": "#232",
       "bgcolor": "#353"
@@ -558,14 +556,14 @@
         },
         {
           "on": true,
-          "lora": "moss\\moss_turbo_v1.safetensors",
+          "lora": "moss\\akhaliq_moss_sft_4step_v2.safetensors",
           "strength": 1,
           "strengthTwo": null
         },
         {
           "on": true,
-          "lora": "moss\\ultra_real_moss_sft_v1_pro.safetensors",
-          "strength": 0.7,
+          "lora": "moss\\mine\\ultra_real_moss_v2.safetensors",
+          "strength": 0.8,
           "strengthTwo": null
         },
         {},
@@ -578,14 +576,14 @@
         },
         "lora_1": {
           "on": true,
-          "lora": "moss\\moss_turbo_v1.safetensors",
+          "lora": "moss\\akhaliq_moss_sft_4step_v2.safetensors",
           "strength": 1,
           "strengthTwo": null
         },
         "lora_2": {
           "on": true,
-          "lora": "moss\\ultra_real_moss_sft_v1_pro.safetensors",
-          "strength": 0.7,
+          "lora": "moss\\mine\\ultra_real_moss_v2.safetensors",
+          "strength": 0.8,
           "strengthTwo": null
         },
         "divider#1": {},
@@ -826,8 +824,8 @@
     "ds": {
       "scale": 1.450000000000001,
       "offset": [
-        -116.88182238511119,
-        -60.53650938530737
+        -113.43354652304222,
+        -75.70892317841083
       ]
     },
     "frontendVersion": "1.55.17",
