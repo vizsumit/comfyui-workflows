@@ -1,18 +1,18 @@
 {
   "id": "163ec137-2b5c-4530-a8fb-acc942d50362",
   "revision": 0,
-  "last_node_id": 43,
-  "last_link_id": 242,
+  "last_node_id": 46,
+  "last_link_id": 247,
   "nodes": [
     {
       "id": 4,
       "type": "VAELoader",
       "pos": [
-        -655.9259259259262,
-        448.66666666666663
+        -662.7150884875023,
+        531.7045977011496
       ],
       "size": [
-        440.8885554389325,
+        451.60284115321815,
         58
       ],
       "flags": {
@@ -53,11 +53,11 @@
       "id": 13,
       "type": "CLIPLoader",
       "pos": [
-        -655.9259259259262,
-        298.66666666666663
+        -661.6471081919357,
+        384.09779967159204
       ],
       "size": [
-        445.5588624758603,
+        452.7017196187174,
         106
       ],
       "flags": {},
@@ -88,12 +88,12 @@
         }
       },
       "widgets_values": [
-        "qwen3vl_4b_int8_convrot.safetensors",
+        "qwen3vl_4b_w4a8.safetensors",
         "krea2",
         "default"
       ],
       "widgets_values_named": {
-        "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+        "clip_name": "qwen3vl_4b_w4a8.safetensors",
         "type": "krea2",
         "device": "default"
       }
@@ -106,7 +106,7 @@
         146.83222095801264
       ],
       "size": [
-        290.8046547650083,
+        323.3494823512152,
         262
       ],
       "flags": {},
@@ -131,15 +131,7 @@
         {
           "name": "latent_image",
           "type": "LATENT",
-          "link": 81
-        },
-        {
-          "name": "seed",
-          "type": "INT",
-          "widget": {
-            "name": "seed"
-          },
-          "link": 163
+          "link": 247
         }
       ],
       "outputs": [
@@ -169,7 +161,7 @@
         }
       },
       "widgets_values": [
-        208663595410852,
+        240116248893548,
         "randomize",
         8,
         1,
@@ -178,7 +170,7 @@
         1
       ],
       "widgets_values_named": {
-        "seed": 208663595410852,
+        "seed": 240116248893548,
         "control_after_generate": "randomize",
         "steps": 8,
         "cfg": 1,
@@ -191,12 +183,12 @@
       "id": 5,
       "type": "PreviewImage",
       "pos": [
-        692.6770983437934,
-        180.63785817050564
+        727.725374205862,
+        145.5895823084368
       ],
       "size": [
-        456.9384048498846,
-        491.2825612297744
+        437.0586018942197,
+        529.6618715746022
       ],
       "flags": {},
       "order": 11,
@@ -230,12 +222,12 @@
       "id": 26,
       "type": "Power Lora Loader (rgthree)",
       "pos": [
-        -653.2370370370372,
-        571.4962962962961
+        384.85951468710095,
+        449.66181353767536
       ],
       "size": [
-        435.1916084571834,
-        214
+        325.75417003353834,
+        190
       ],
       "flags": {
         "collapsed": false
@@ -247,7 +239,7 @@
           "dir": 3,
           "name": "model",
           "type": "MODEL",
-          "link": 76
+          "link": 244
         },
         {
           "dir": 3,
@@ -294,20 +286,20 @@
         },
         {
           "on": true,
-          "lora": "krea2\\mine\\ultra_real_krea2_v3.safetensors",
+          "lora": "krea2\\krea2filterbypass3.safetensors",
+          "strength": 1,
+          "strengthTwo": null
+        },
+        {
+          "on": true,
+          "lora": "krea2\\mine\\ultra_real_krea2_v4.safetensors",
           "strength": 0.5,
           "strengthTwo": null
         },
         {
           "on": false,
-          "lora": "krea2\\krea2filterbypass3.safetensors",
-          "strength": 0.8,
-          "strengthTwo": null
-        },
-        {
-          "on": false,
-          "lora": "krea2\\krea2filterbypass3.safetensors",
-          "strength": 0.8,
+          "lora": "krea2\\ivladikov_krea2_turbo_4step.safetensors",
+          "strength": 1,
           "strengthTwo": null
         },
         {},
@@ -320,23 +312,23 @@
         },
         "lora_1": {
           "on": true,
-          "lora": "krea2\\mine\\ultra_real_krea2_v3.safetensors",
+          "lora": "krea2\\krea2filterbypass3.safetensors",
+          "strength": 1,
+          "strengthTwo": null
+        },
+        "lora_2": {
+          "on": true,
+          "lora": "krea2\\mine\\ultra_real_krea2_v4.safetensors",
           "strength": 0.5,
           "strengthTwo": null
         },
         "lora_3": {
           "on": false,
-          "lora": "krea2\\krea2filterbypass3.safetensors",
-          "strength": 0.8,
+          "lora": "krea2\\ivladikov_krea2_turbo_4step.safetensors",
+          "strength": 1,
           "strengthTwo": null
         },
-        "lora_4": {
-          "on": false,
-          "lora": "krea2\\krea2filterbypass3.safetensors",
-          "strength": 0.8,
-          "strengthTwo": null
-        },
-        "divider#1": {},
+        "divider#2": {},
         "➕ Add Lora": ""
       }
     },
@@ -344,8 +336,8 @@
       "id": 3,
       "type": "VAEDecode",
       "pos": [
-        691.7818143201649,
-        146.51498828797511
+        579.6055691094365,
+        108.32220230001678
       ],
       "size": [
         225,
@@ -389,71 +381,11 @@
       }
     },
     {
-      "id": 18,
-      "type": "SDXLEmptyLatentSizePicker+",
-      "pos": [
-        389.2603741480756,
-        628.3701333751587
-      ],
-      "size": [
-        300.98735386841486,
-        170
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            80
-          ]
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "links": null
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "links": null
-        }
-      ],
-      "title": "Empty Latent",
-      "properties": {
-        "cnr_id": "comfyui_essentials",
-        "ver": "1.1.0",
-        "Node name for S&R": "SDXLEmptyLatentSizePicker+",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "832x1216 (0.68)",
-        1,
-        0,
-        0
-      ],
-      "widgets_values_named": {
-        "resolution": "832x1216 (0.68)",
-        "batch_size": 1,
-        "width_override": 0,
-        "height_override": 0
-      }
-    },
-    {
       "id": 8,
       "type": "ConditioningZeroOut",
       "pos": [
-        189.8266987205013,
-        671.9622221384865
+        178.9784228584323,
+        109.52084282814181
       ],
       "size": [
         225,
@@ -503,7 +435,7 @@
         82
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -511,7 +443,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            76
+            243
           ]
         }
       ],
@@ -535,111 +467,6 @@
       }
     },
     {
-      "id": 32,
-      "type": "Seed (rgthree)",
-      "pos": [
-        389.7924188075632,
-        453.65065226960206
-      ],
-      "size": [
-        290,
-        130
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 4,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "dir": 4,
-          "name": "SEED",
-          "shape": 3,
-          "type": "INT",
-          "links": [
-            163
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "rgthree-comfy",
-        "ver": "eadc24ecc8bfc3c80fcc50724c0ebe74489f255b",
-        "randomMax": 1125899906842624,
-        "randomMin": 0,
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.5.1"
-        }
-      },
-      "widgets_values": [
-        -1,
-        "",
-        "",
-        ""
-      ],
-      "widgets_values_named": {
-        "seed": -1,
-        "🎲 Randomize Each Time": "",
-        "🎲 New Fixed Random": "",
-        "USE_LAST_SEED": ""
-      },
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
-      "id": 31,
-      "type": "LatentUpscaleBy",
-      "pos": [
-        509.52182935869456,
-        665.2222997791793
-      ],
-      "size": [
-        270,
-        82
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 5,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 80
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            81
-          ]
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.27.0",
-        "Node name for S&R": "LatentUpscaleBy",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "nearest-exact",
-        1.5
-      ],
-      "widgets_values_named": {
-        "upscale_method": "nearest-exact",
-        "scale_by": 1.5
-      }
-    },
-    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": [
@@ -647,8 +474,8 @@
         149.08886641394605
       ],
       "size": [
-        435.49652008161206,
-        488.02584814313514
+        433.2334658944199,
+        489.4406264682583
       ],
       "flags": {},
       "order": 7,
@@ -683,13 +510,191 @@
         }
       },
       "widgets_values": [
-        "A young woman with blonde hair takes a selfie while sipping an iced coffee on a city street at sunset.\n\nSubject: A fair-skinned young woman with wavy blonde hair and blue eyes looking directly at the camera.\n\nClothing: She wears a beige ribbed crop top, light-colored pants, and a light blue knitted cardigan draped over her shoulders.\n\nAction: She holds a clear plastic cup with a green straw to her lips, blowing a kiss or puckering her mouth slightly.\n\nEnvironment: An urban pedestrian street lined with modern buildings and trees, featuring a Starbucks storefront on the left and the CN Tower visible in the distance against the sky.\n\nCamera: A close-up selfie perspective with a shallow depth of field that blurs the background pedestrians and city lights.\n\nLighting: Warm golden hour sunlight from the setting sun creates a soft glow on her face and hair, contrasting with the ambient street lighting.\n\nText/Graphics: The green Starbucks logo is clearly visible on the cup she is holding.\n\nStyle Details: High-resolution photography with vibrant colors and a cinematic urban aesthetic."
+        "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth.\n"
       ],
       "widgets_values_named": {
-        "text": "A young woman with blonde hair takes a selfie while sipping an iced coffee on a city street at sunset.\n\nSubject: A fair-skinned young woman with wavy blonde hair and blue eyes looking directly at the camera.\n\nClothing: She wears a beige ribbed crop top, light-colored pants, and a light blue knitted cardigan draped over her shoulders.\n\nAction: She holds a clear plastic cup with a green straw to her lips, blowing a kiss or puckering her mouth slightly.\n\nEnvironment: An urban pedestrian street lined with modern buildings and trees, featuring a Starbucks storefront on the left and the CN Tower visible in the distance against the sky.\n\nCamera: A close-up selfie perspective with a shallow depth of field that blurs the background pedestrians and city lights.\n\nLighting: Warm golden hour sunlight from the setting sun creates a soft glow on her face and hair, contrasting with the ambient street lighting.\n\nText/Graphics: The green Starbucks logo is clearly visible on the cup she is holding.\n\nStyle Details: High-resolution photography with vibrant colors and a cinematic urban aesthetic."
+        "text": "A woman with dark wavy hair and bangs stands in a richly decorated room, wearing an elaborate black velvet gown adorned with silver embroidery and lace.\n\nSubject: A fair-skinned woman with dark wavy hair styled with a black headband and a white decorative clip, featuring light eyes and a neutral expression.\n\nClothing: An ornate black velvet dress with intricate silver floral embroidery along the edges, sheer lace sleeves, and a deep neckline.\n\nAction: Her right hand is raised to her chest in a graceful gesture, while her left arm rests at her side; she gazes directly forward with a calm demeanor.\n\nEnvironment: A luxurious interior with polished wooden paneling, a large ornate gold-framed mirror reflecting candlelight, and a tapestry hanging on the wall behind her.\n\nCamera: Medium close-up shot with shallow depth of field, focusing sharply on the subject while softly blurring the background details.\n\nLighting: Warm ambient lighting from multiple candles in the background creates soft highlights on her face and jewelry, casting gentle shadows that enhance the texture of her clothing.\n\nObjects: A silver choker necklace with emerald green gemstones, matching drop earrings, a ringed hand with multiple rings including emeralds, a bracelet on each wrist, and a small white decorative hair clip.\n\nStyle Details: High-fidelity photography with cinematic color grading, rich textures in velvet and lace, elegant composition reminiscent of historical portraiture, and subtle film grain for depth.\n"
       },
       "color": "#232",
       "bgcolor": "#353"
+    },
+    {
+      "id": 44,
+      "type": "ModelAttentionBackend",
+      "pos": [
+        -661.4559073621119,
+        284.3957225691231
+      ],
+      "size": [
+        453.58620689655174,
+        58
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 243
+        }
+      ],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            244
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.45.0",
+        "Node name for S&R": "ModelAttentionBackend",
+        "ue_properties": {
+          "version": "8.0.1",
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "title_regex": null,
+          "input_regex": null,
+          "group_regex": null,
+          "title_regex_invert": false,
+          "input_regex_invert": false,
+          "group_regex_invert": false,
+          "apply_to_unrepeated": 0,
+          "send_to_any": 0,
+          "string_to_combo": 0,
+          "repeated_type_rule": 0,
+          "group_restricted": 0,
+          "color_restricted": 0
+        }
+      },
+      "widgets_values": [
+        "comfy kitchen attention"
+      ],
+      "widgets_values_named": {
+        "attention": "comfy kitchen attention"
+      }
+    },
+    {
+      "id": 45,
+      "type": "ResolutionSelector",
+      "pos": [
+        -68.56526696802277,
+        679.5332595149358
+      ],
+      "size": [
+        298.62068965517244,
+        150
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 3,
+      "mode": 0,
+      "showAdvanced": true,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            245
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            246
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "ResolutionSelector",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.8",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "2:3 (Portrait Photo)",
+        1.5,
+        16
+      ],
+      "widgets_values_named": {
+        "aspect_ratio": "2:3 (Portrait Photo)",
+        "megapixels": 1.5,
+        "multiple": 16
+      }
+    },
+    {
+      "id": 46,
+      "type": "EmptyLatentImage",
+      "pos": [
+        194.3017281058678,
+        678.8165107464621
+      ],
+      "size": [
+        270,
+        106
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 245
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 246
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            247
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.42.0",
+        "Node name for S&R": "EmptyLatentImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        1
+      ],
+      "widgets_values_named": {
+        "width": 1024,
+        "height": 1024,
+        "batch_size": 1
+      }
     }
   ],
   "links": [
@@ -742,38 +747,6 @@
       "CLIP"
     ],
     [
-      76,
-      30,
-      0,
-      26,
-      0,
-      "MODEL"
-    ],
-    [
-      80,
-      18,
-      0,
-      31,
-      0,
-      "LATENT"
-    ],
-    [
-      81,
-      31,
-      0,
-      2,
-      3,
-      "LATENT"
-    ],
-    [
-      163,
-      32,
-      0,
-      2,
-      4,
-      "INT"
-    ],
-    [
       240,
       26,
       0,
@@ -796,25 +769,61 @@
       3,
       1,
       "VAE"
+    ],
+    [
+      243,
+      30,
+      0,
+      44,
+      0,
+      "MODEL"
+    ],
+    [
+      244,
+      44,
+      0,
+      26,
+      0,
+      "MODEL"
+    ],
+    [
+      245,
+      45,
+      0,
+      46,
+      0,
+      "INT"
+    ],
+    [
+      246,
+      45,
+      1,
+      46,
+      1,
+      "INT"
+    ],
+    [
+      247,
+      46,
+      0,
+      2,
+      3,
+      "LATENT"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 1.45,
+      "scale": 1.4,
       "offset": [
-        120.32487287935311,
-        -45.22330877601971
+        119.35684346304656,
+        -35.991468993835056
       ]
     },
-    "frontendVersion": "1.55.17",
+    "frontendVersion": "1.59.4",
     "ue_links": [],
-    "links_added_by_ue": [
-      237,
-      238,
-      239
-    ]
+    "links_added_by_ue": []
   },
   "version": 0.4
 }
